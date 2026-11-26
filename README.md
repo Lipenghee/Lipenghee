@@ -17,14 +17,13 @@ Correctness fixes submitted to upstream projects. As of 2026-11-26, none of thes
 
 **Primary**
 
-- [FlashInfer #9309](https://github.com/flashinfer-ai/flashinfer/pull/9309) — Align FA2 JIT dispatch with instantiated query tiles to avoid dynamic linking failures; adds compile, link, and load regression tests. Status: open, awaiting maintainer CI authorization and review.
+- [FlashInfer #9309](https://github.com/flashinfer-ai/flashinfer/pull/9309) — Align FA2 JIT dispatch with instantiated query tiles to avoid dynamic linking failures; adds compile, link, and load regression tests. Status: open, rebased onto current main; a targeted CI request has been posted, still awaiting maintainer authorization and review.
 - [Triton #12510](https://github.com/triton-lang/triton/pull/12510) — Make MXFP4 nearest-even rounding elementwise, so one element's rounding is not affected by unrelated values; adds midpoint and neighbor regressions. Status: open, awaiting review.
 
 **Other open PRs**
 
 - [Triton #12598](https://github.com/triton-lang/triton/pull/12598) — Preserve closure bindings when the interpreter rewrites kernels.
 - [SGLang #44162](https://github.com/sgl-project/sglang/pull/44162) — Compensate cumulative request-arrival-time drift in the serving benchmark.
-- [llama.cpp #28232](https://github.com/ggml-org/llama.cpp/pull/28232) — Truncate speculative results at end-of-generation before rollback. This PR is still open and may overlap with later upstream work; it should not be described as merged or as the final fix.
 
 ## Technical stack
 
